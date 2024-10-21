@@ -5,7 +5,7 @@
 # https://github.com/MushroomFleet/Runpod-init
 
 # Packages are installed after nodes so we can fix them...
-export HF_TOKEN=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
+export HF_TOKEN=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
 
 DEFAULT_WORKFLOW="https://raw.githubusercontent.com/ai-dock/comfyui/main/config/workflows/flux-comfyui-example.json"
 
@@ -73,6 +73,10 @@ LORA_MODELS=(
 	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_TR_1.safetensors"
 	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_JA_3.safetensors"
 	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_TR_2.safetensors"
+ 	"https://huggingface.co/SigCreative/New_JA_SH/resolve/main/SKS_MNG_JA_4_caption.safetensors"
+  	"https://huggingface.co/SigCreative/New_JA_SH/resolve/main/SKS_MNG_SH_2.safetensors"
+   	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_TR_2.safetensors"
+    	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_JA_3.safetensors"
 )
 
 VAE_MODELS=(
