@@ -5,7 +5,7 @@
 # https://github.com/MushroomFleet/Runpod-init
 
 # Packages are installed after nodes so we can fix them...
-export HF_TOKEN=
+export HF_TOKEN=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
 
 DEFAULT_WORKFLOW="https://raw.githubusercontent.com/ai-dock/comfyui/main/config/workflows/flux-comfyui-example.json"
 
@@ -48,13 +48,13 @@ WORKFLOWS=(
 CHECKPOINT_MODELS=(
 	#"https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
 	#"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
-	#"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
+	"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
 	#"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
  	
 )
 
 UNET_MODELS=(
-	#"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/flux1-dev.sft"
+	"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/flux1-dev.sft"
  	"https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_0.gguf"
 )
 
@@ -77,6 +77,8 @@ LORA_MODELS=(
   	"https://huggingface.co/SigCreative/New_JA_SH/resolve/main/SKS_MNG_SH_2.safetensors"
    	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_TR_2.safetensors"
     	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_JA_3.safetensors"
+     	"https://huggingface.co/XLabs-AI/flux-RealismLora/resolve/main/lora.safetensors"
+      
 )
 
 VAE_MODELS=(
@@ -85,9 +87,9 @@ VAE_MODELS=(
 )
 
 ESRGAN_MODELS=(
-    #"https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
-    #"https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
-    #"https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
+    "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
+    "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
+    "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
 )
 
 CONTROLNET_MODELS=(
@@ -95,6 +97,7 @@ CONTROLNET_MODELS=(
 	"https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-canny-controlnet-v3.safetensors"
 	"https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-depth-controlnet-v3.safetensors"
 	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors"
+ 	"https://huggingface.co/jasperai/Flux.1-dev-Controlnet-Upscaler/resolve/main/diffusion_pytorch_model.safetensors"
     #"https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_canny_mid.safetensors"
     #"https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_depth_mid.safetensors"
     #"https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_diffusers_xl_openpose.safetensors"
