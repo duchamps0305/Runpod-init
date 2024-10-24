@@ -5,7 +5,8 @@
 # https://github.com/MushroomFleet/Runpod-init
 
 # Packages are installed after nodes so we can fix them...
-export HF_TOKEN=
+export HF_TOKEN=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
+
 
 DEFAULT_WORKFLOW="https://raw.githubusercontent.com/ai-dock/comfyui/main/config/workflows/flux-comfyui-example.json"
 
@@ -48,41 +49,32 @@ WORKFLOWS=(
 CHECKPOINT_MODELS=(
 	#"https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
 	#"https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
-	"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
+#	"https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
 	#"https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
+ 	"https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/sd3.5_large.safetensors"
  	
 )
 
 UNET_MODELS=(
-	"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/flux1-dev.sft"
- 	"https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_0.gguf"
+	#"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/flux1-dev.sft"
+ 	#"https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_0.gguf"
 )
 
 CLIP_MODELS=(
 	"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/clip_l.safetensors"
-	"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/t5xxl_fp16.safetensors"
+	"https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/text_encoders/t5xxl_fp16.safetensors"
+ 	"https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/text_encoders/clip_g.safetensors"
 )
 
 LORA_MODELS=(
-	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_CO_1.safetensors"
-	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_FC_3.safetensors"
-	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_JA_1.safetensors"
-	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_LO_1.safetensors"
-	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_ST_no_1-2-3-4-5-6-7-20-21-22-23-24-25-26-28-29.safetensors"
-	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_SW_1.safetensors"
-	"https://huggingface.co/SigCreative/Look_2/resolve/main/SKS_MNG_TR_1.safetensors"
-	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_JA_3.safetensors"
-	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_TR_2.safetensors"
- 	"https://huggingface.co/SigCreative/New_JA_SH/resolve/main/SKS_MNG_JA_4_caption.safetensors"
-  	"https://huggingface.co/SigCreative/New_JA_SH/resolve/main/SKS_MNG_SH_2.safetensors"
-   	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_TR_2.safetensors"
-    	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_JA_3.safetensors"
-     	"https://huggingface.co/XLabs-AI/flux-RealismLora/resolve/main/lora.safetensors"
-      
+      	"https://huggingface.co/SigCreative/SD_SKS_MNG_SH_test2/resolve/main/SD_SKS_MNG_SH_BLOCK_13_000002500.safetensors"
+       	"https://huggingface.co/SigCreative/SD35_Blocks_not_working/resolve/main/SD_SKS_MNG_SH_BLOCK_12.safetensors"
+	"https://huggingface.co/SigCreative/SD35_Blocks_not_working/resolve/main/SD_SKS_MNG_SH_BLOCK_18.safetensors"
+ 	"https://huggingface.co/SigCreative/SD35_Blocks_not_working/resolve/main/SD_SKS_MNG_SH_BLOCK_22.safetensors"
+  	"https://huggingface.co/SigCreative/SD35_Blocks_not_working/resolve/main/SD_SKS_MNG_SH_BLOCK_29.safetensors"
 )
 
 VAE_MODELS=(
-    "https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/ae.sft"
     #"https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
 )
 
@@ -94,10 +86,6 @@ ESRGAN_MODELS=(
 
 CONTROLNET_MODELS=(
 	"https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-hed-controlnet-v3.safetensors"
-	"https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-canny-controlnet-v3.safetensors"
-	"https://huggingface.co/XLabs-AI/flux-controlnet-collections/resolve/main/flux-depth-controlnet-v3.safetensors"
-	"https://huggingface.co/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors"
- 	"https://huggingface.co/jasperai/Flux.1-dev-Controlnet-Upscaler/resolve/main/diffusion_pytorch_model.safetensors"
     #"https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_canny_mid.safetensors"
     #"https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/diffusers_xl_depth_mid.safetensors"
     #"https://huggingface.co/lllyasviel/sd_control_collection/resolve/main/t2i-adapter_diffusers_xl_openpose.safetensors"
