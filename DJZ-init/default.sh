@@ -5,7 +5,7 @@
 # https://github.com/MushroomFleet/Runpod-init
 
 # Packages are installed after nodes so we can fix them...
-export HF_TOKEN=
+export HF_TOKEN=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
 
 DEFAULT_WORKFLOW="https://raw.githubusercontent.com/ai-dock/comfyui/main/config/workflows/flux-comfyui-example.json"
 
