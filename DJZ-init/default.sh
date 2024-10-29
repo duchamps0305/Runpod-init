@@ -55,13 +55,10 @@ CHECKPOINT_MODELS=(
 
 UNET_MODELS=(
  	"https://huggingface.co/city96/FLUX.1-dev-gguf/resolve/main/flux1-dev-Q4_0.gguf"
-  	"https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/sd3.5_large.safetensors"
 )
 
 CLIP_MODELS=(
 	"https://huggingface.co/camenduru/FLUX.1-dev/resolve/main/clip_l.safetensors"
-	"https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/text_encoders/t5xxl_fp16.safetensors"
- 	"https://huggingface.co/stabilityai/stable-diffusion-3.5-large/resolve/main/text_encoders/clip_g.safetensors"
 )
 
 LORA_MODELS=(
@@ -79,6 +76,8 @@ LORA_MODELS=(
    	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_TR_2.safetensors"
     	"https://huggingface.co/SigCreative/Look3/resolve/main/SKS_MNG_JA_3.safetensors"
      	"https://huggingface.co/XLabs-AI/flux-RealismLora/resolve/main/lora.safetensors"
+      	"https://huggingface.co/duchamps0305/Mod_Collection/resolve/main/loras/glasses_1.safetensors"
+       	"https://huggingface.co/duchamps0305/Mod_Collection/resolve/main/loras/style_glasses_1.safetensors"
       
 )
 
